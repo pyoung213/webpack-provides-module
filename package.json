@@ -8,9 +8,6 @@
   "repository": "https://github.com/pyoung213/webpack-provides-module",
   "license": "MIT",
   "private": false,
-  "engines": {
-    "node": "4.x"
-  },
   "dependencies": {
     "lodash": "4.17.4"
   },
