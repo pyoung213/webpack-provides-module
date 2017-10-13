@@ -1,6 +1,6 @@
 {
   "name": "webpack-provides-module",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Provides module plugin for webpack.",
   "scripts": {},
   "author": "pyoung213@gmail.com",
@@ -9,12 +9,12 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "lodash": "4.17.4"
+    "lodash": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "4.8.0",
+    "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "2.7.0"
+    "eslint-plugin-import": "^2.7.0"
   },
   "main": "index.js"
 }
