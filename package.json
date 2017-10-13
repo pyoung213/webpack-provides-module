@@ -1,6 +1,6 @@
 {
   "name": "webpack-provides-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides module plugin for webpack.",
   "scripts": {},
   "author": "pyoung213@gmail.com",
