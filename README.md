@@ -13,14 +13,13 @@ Usage
 
 #### In your webpack config
 ```JavaScript
-const providesModuleHelper = require("webpack-provides-module");
+const providesModule = require("webpack-provides-module");
 
 resolve: {
-    providesModuleHelper.discover({
-        roots: [
-            root("src")
-        ]
-    })
+    alias: providesModule.discover({
+            roots: [ path.resolve(__dirname, "../src") ],
+            fileTypes: [".js", ".vue"]
+        }),
 }
 ```
 

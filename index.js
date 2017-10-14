@@ -10,12 +10,26 @@ module.exports = {
     discover,
 
     _walkTree,
-    _isOnBlacklist
+    _isOnBlacklist,
+    _isCorrectFileType
 };
 
 function discover(options) {
+    if (!_.isArray(options.fileTypes)) {
+        console.log("FileTypes is Not an Array");
+
+        return;
+    }
+
+    if (!options.fileTypes) {
+        console.log("No File Type Specified");
+
+        return;
+    }
+
     this.options = options;
     this.modules = {};
+    this.fileTypes = options.fileTypes;
 
     console.log("Crawling File System");
     console.time("Crawling File System (Elapsed)");
@@ -42,7 +56,7 @@ function _walkTree(path) {
         return;
     }
 
-    if (!stat.isFile() || !path.endsWith(".js")) {
+    if (!stat.isFile() || !this._isCorrectFileType(path)) {
         return;
     }
 
@@ -67,6 +81,12 @@ function _walkTree(path) {
     }
 
     this.modules[moduleName] = path;
+}
+
+function _isCorrectFileType(path) {
+    return _.some(this.fileTypes, (file) => {
+        return path.endsWith(file);
+    });
 }
 
 function _isOnBlacklist(path) {
