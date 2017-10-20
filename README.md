@@ -1,7 +1,7 @@
 Webpack Provides Module
 ==========
 
-Webpack plugin that allows you to not use static paths so you can move components around freely in your folder structure.
+Webpack plugin that allows importing modules by symbolic name, rather than by path.
 
 Install
 ----
@@ -32,7 +32,7 @@ At the top of any file that is in your discovered path (example "src") and is no
 ```
 <b>Importing in another file</b>
 ```JavaScript
-import NAMESPACE-ComponentName from "NAMESPACE-ComponentName";
+import ComponentName from "NAMESPACE-ComponentName";
 ```
 
 I like to namespace the beginning with the product name for searching, linting and collisions.  Example if your product was called "Awesome Product" I would start all of them with AP-{ComponentName}.

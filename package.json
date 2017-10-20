@@ -1,20 +1,20 @@
 {
   "name": "webpack-provides-module",
-  "version": "1.0.1",
-  "description": "Provides module plugin for webpack.",
+  "version": "1.0.2",
+  "description": "Allows importing modules by symbolic name, rather than by path",
   "scripts": {},
   "author": "pyoung213@gmail.com",
-  "keywords": [],
+  "keywords": ["webpack", "provides", "module", "import", "path"],
   "repository": "https://github.com/pyoung213/webpack-provides-module",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "lodash": "^4.0.0"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   },
   "main": "index.js"
 }
